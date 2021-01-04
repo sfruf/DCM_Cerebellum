@@ -1,4 +1,6 @@
-Resting_state=1; %Resting_state=2 loads the second resting state run
+Resting_state=1; %Resting_state=2 loads the second resting state run 
+% script was run twice in each sub-directory that contained HCP outputs
+% from the 1st and 2nd group of patients
 
 if Resting_state==1
     rest_bfolder="MNINonLinear/Results/rFMRI_REST1_LR";

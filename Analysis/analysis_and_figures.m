@@ -11,7 +11,6 @@ n=length(DCM6_csd);
 %%
 [PEB6,P6]=spm_dcm_peb([DCM6_csd(:),DCM6_csd2(:);DCM6_csd_v2_1(:),DCM6_csd_v2_2(:)]);
 
-%[PEB6,P6]=spm_dcm_peb([DCM6_csd(:),DCM6_csd2(:);DCM6_csd_v2_1(:),DCM6_csd_v2_2(:)],[ones(2*n,1),[ones(n,1);-1*ones(n,1)]]);
 %% graphs
 spm_dcm_peb_review(PEB6)
 
