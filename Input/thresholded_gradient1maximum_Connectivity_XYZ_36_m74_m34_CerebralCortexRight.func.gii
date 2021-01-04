@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GIFTI xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="http://brainvis.wustl.edu/caret6/xml_schemas/GIFTI_Caret.xsd"
+       Version="1"
+       NumberOfDataArrays="1">
+   <MetaData>
+      <MD>
+         <Name><![CDATA[AnatomicalStructurePrimary]]></Name>
+         <Value><![CDATA[CortexRight]]></Value>
+      </MD>
+      <MD>
+         <Name><![CDATA[ParentProvenance]]></Name>
+         <Value><![CDATA[gradient1maximum_Connectivity_XYZ_36_m74_m34_CortexRight.func.gii:
+wb_command -cifti-separate gradient1maximum_Connectivity_XYZ_36_m74_m34.dscalar.nii COLUMN -metric CORTEX_RIGHT gradient1maximum_Connectivity_XYZ_36_m74_m34_CortexRight.func.gii
+
+]]></Value>
+      </MD>
+      <MD>
+         <Name><![CDATA[ProgramProvenance]]></Name>
+         <Value><![CDATA[Connectome Workbench
+Type: Command Line Application
+Version: 1.1.1
+Qt Compiled Version: 4.8.6
+Qt Runtime Version: 4.8.7
+Commit: unknown (NeuroDebian build from source)
+Commit Date: unknown
+Compiler: x86_64-linux-gnu-g++ (/usr/bin)
+Compiler Version: 4.9.3
+Compiled Debug: NO
+Operating System: Linux
+]]></Value>
+      </MD>
+      <MD>
+         <Name><![CDATA[Provenance]]></Name>
+         <Value><![CDATA[wb_command -metric-math '(x>0.4591731429100035)' thresholded_gradient1maximum_Connectivity_XYZ_36_m74_m34_CortexRight.func.gii -var x gradient1maximum_Connectivity_XYZ_36_m74_m34_CortexRight.func.gii]]></Value>
+      </MD>
+      <MD>
+         <Name><![CDATA[WorkingDirectory]]></Name>
+         <Value><![CDATA[/mnt/c/Users/xavie/Dropbox (MIT)/MIT/_ACTIVE_PROJECTS/Sebastian_DCM/gradients_CerebellumToCerebralCortex]]></Value>
+      </MD>
+   </MetaData>
+   <LabelTable>
+      <Label Key="0" Red="1" Green="1" Blue="1" Alpha="0"><![CDATA[???]]></Label>
+   </LabelTable>
+<DataArray Intent="NIFTI_INTENT_NORMAL"
+           DataType="NIFTI_TYPE_FLOAT32"
+           ArrayIndexingOrder="RowMajorOrder"
+           Dimensionality="1"
+           Dim0="32492"
+           Encoding="GZipBase64Binary"
+           Endian="LittleEndian"
+           ExternalFileName=""
+           ExternalFileOffset="0">
+   <MetaData>
+   </MetaData>
+   <Data>eJzt3EtywjAMAFBuxtV69E4W3XRDDLIsifdmsqGJPhA+Y7t+PH6ejyWr53dz9Xf3oJ7Jr8vU3ib2Na2nSf1M6WVKHwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABw2s9z/QAAAAAA6GzHeGf0OGrk2GxUrIgx49Mx3r028rroa3acu3LOO39fedy8BAAAAAAAAAAAAEAfp/anOLFHxon9ObL3Bsncj2Q1V/S6+OhcE3JUqf8dmfcqAAAAAAAAAAAAAAAAwLc68b+Wd2oCAAAAgGjZ406ZY2xZY3oZ44e7c+yMv2uMNWMvrk9jZu5vVinOJ9evMG4+1479AqPjwR2T77eJPf2Z1g8AAAAAAAAAAAAAAAAAAAAAwEn/93NZ3Wdq4gEAAAAAAMA9E+dcds0lnX5OpvU07d6b3ktH3eu/dK6/c+3k6HJ/dPksqf653eF7snKNlddLVV3X1bmmKvVkUsfrGqbn/5a8FfJNyMM+0c+v1wuo5vRvrR0q/a6P8E39dDSpl8uUHgAAAAAAoJLuY++X7nMInedyus5Fday7W82d6u1Sa4c6q9dYuT51ralWU6VaLlXqqVDHyXvl1Pvn1HqhE3mz13pl5stal5eR51WOT/PsjL8r9o64mfGiYn0aB2L9AtyRaqI=</Data>
+</DataArray>
+</GIFTI>
