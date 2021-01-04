@@ -1,0 +1,14 @@
+#!/bin/bash
+
+files="ls -d */"
+
+for File in $files
+do
+   if [[ "$File" != *"zip"*  ]]
+   then
+	mkdir ./Extracted_Mats/${File%%*( )}
+	cp -r ${File%%*( )}MNINonLinear/Results/*.txt ./Extracted_Mats/${File%%*( )}
+   fi
+done
+
+

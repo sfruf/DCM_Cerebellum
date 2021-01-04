@@ -1,0 +1,26 @@
+#!/bin/bash
+
+files="ls -d */"
+
+for File in $files
+do   
+   cd $File/MNINonLinear/Results/rfMRI_REST2_LR
+   wb_command -cifti-roi-average -left-roi /Volumes/My\ Passport\ for\ Mac/HCP\ files/thresholded_gradient1maximum_Connectivity_XYZ_36_m74_m34_CerebralCortexLeft.func.gii rfMRI_REST2_LR_Atlas_MSMAll_hp2000_clean.dtseries.nii left_grad1max.txt 
+   wb_command -cifti-roi-average -right-roi /Volumes/My\ Passport\ for\ Mac/HCP\ files/thresholded_gradient1maximum_Connectivity_XYZ_36_m74_m34_CerebralCortexRight.func.gii rfMRI_REST2_LR_Atlas_MSMAll_hp2000_clean.dtseries.nii right_grad1max.txt 
+   wb_command -cifti-roi-average -right-roi /Volumes/My\ Passport\ for\ Mac/HCP\ files/thresholded_gradient1maximum_Connectivity_XYZ_36_m74_m34_CerebralCortexRight.func.gii -left-roi /Volumes/My\ Passport\ for\ Mac/HCP\ files/thresholded_gradient1maximum_Connectivity_XYZ_36_m74_m34_CerebralCortexLeft.func.gii rfMRI_REST2_LR_Atlas_MSMAll_hp2000_clean.dtseries.nii comb_grad1max.txt
+
+   wb_command -cifti-roi-average -left-roi /Volumes/My\ Passport\ for\ Mac/HCP\ files/thresholded_gradient1minimim_Connectivity_XYZ_m20_m52_m22_CerebralCortexLeft.func.gii rfMRI_REST2_LR_Atlas_MSMAll_hp2000_clean.dtseries.nii left_grad1min.txt
+   wb_command -cifti-roi-average -right-roi /Volumes/My\ Passport\ for\ Mac/HCP\ files/thresholded_gradient1minimim_Connectivity_XYZ_m20_m52_m22_CerebralCortexRight.func.gii rfMRI_REST2_LR_Atlas_MSMAll_hp2000_clean.dtseries.nii right_grad1min.txt
+   wb_command -cifti-roi-average -right-roi /Volumes/My\ Passport\ for\ Mac/HCP\ files/thresholded_gradient1minimim_Connectivity_XYZ_m20_m52_m22_CerebralCortexRight.func.gii -left-roi /Volumes/My\ Passport\ for\ Mac/HCP\ files/thresholded_gradient1minimim_Connectivity_XYZ_m20_m52_m22_CerebralCortexLeft.func.gii rfMRI_REST2_LR_Atlas_MSMAll_hp2000_clean.dtseries.nii comb_grad1min.txt 
+
+   wb_command -cifti-roi-average -left-roi /Volumes/My\ Passport\ for\ Mac/HCP\ files/thresholded_gradient2maximum_Connectivity_XYZ_m24_m70_m48_CerebralCortexLeft.func.gii rfMRI_REST2_LR_Atlas_MSMAll_hp2000_clean.dtseries.nii left_grad2max.txt 
+   wb_command -cifti-roi-average -right-roi /Volumes/My\ Passport\ for\ Mac/HCP\ files/thresholded_gradient2maximum_Connectivity_XYZ_m24_m70_m48_CerebralCortexRight.func.gii rfMRI_REST2_LR_Atlas_MSMAll_hp2000_clean.dtseries.nii right_grad2max.txt 
+   wb_command -cifti-roi-average -right-roi /Volumes/My\ Passport\ for\ Mac/HCP\ files/thresholded_gradient2maximum_Connectivity_XYZ_m24_m70_m48_CerebralCortexRight.func.gii -left-roi /Volumes/My\ Passport\ for\ Mac/HCP\ files/thresholded_gradient2maximum_Connectivity_XYZ_m24_m70_m48_CerebralCortexLeft.func.gii rfMRI_REST2_LR_Atlas_MSMAll_hp2000_clean.dtseries.nii comb_grad2max.txt
+   
+   wb_command -cifti-roi-average -vol-roi /Volumes/My\ Passport\ for\ Mac/HCP\ files/thresholded_gradient1maximum_cerebellum.nii rfMRI_REST2_LR_Atlas_MSMAll_hp2000_clean.dtseries.nii cerb_grad1max.txt
+   wb_command -cifti-roi-average -vol-roi /Volumes/My\ Passport\ for\ Mac/HCP\ files/thresholded_gradient2maximum_cerebellum.nii rfMRI_REST2_LR_Atlas_MSMAll_hp2000_clean.dtseries.nii cerb_grad2max.txt
+   wb_command -cifti-roi-average -vol-roi /Volumes/My\ Passport\ for\ Mac/HCP\ files/thresholded_gradient1minimum_cerebellum.nii rfMRI_REST2_LR_Atlas_MSMAll_hp2000_clean.dtseries.nii cerb_grad1min.txt
+
+   cd /Volumes/My\ Passport\ for\ Mac/HCP\ files/
+done
+
